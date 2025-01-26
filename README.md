@@ -29,7 +29,7 @@
 
 - [ ] **More**  - Coming soon
 
-Some functions for the game might not support at the first time when a new version of "Anime Game" drops, please wait for a new commit. Since version 2.3, The original Creators've created a private fork which supports the beta version of the game, and the private fork will be merged to the main branch ASAP when it's ready for release.
+Some functions of the game might not be support at the first when a new version of the "Anime Game" drops, in such cases, please wait for a new commit tp this Server. Since version 2.3, The original Creators've created a private fork which supports the beta version of the game, and the private fork will be merged to the main branch ASAP when it's ready for release.
 
 ## 🍗 Use & Installation
 
