@@ -1,6 +1,6 @@
 # Danheng Server
 
-**__This project is under development! Some game technique might not correctly!__**
+**__This project is under development! Some game features might not work as intended, if at all!__**
 
 <p align="center">
 <a href="https://visualstudio.com"><img src="https://img.shields.io/badge/Visual%20Studio-000000.svg?style=for-the-badge&logo=visual-studio&logoColor=white" /></a>
@@ -29,18 +29,13 @@
 
 - [ ] **More**  - Coming soon
 
-Some functions for the game might not support at the first time when new "Anime Game" version drops, please stay tune to our new commit. Since version 2.3, we've created a private fork which supports beta version, and will merge to main branch asap when it's ready.
+Some functions for the game might not support at the first time when a new version of "Anime Game" drops, please wait for a new commit. Since version 2.3, The original Creators've created a private fork which supports the beta version of the game, and the private fork will be merged to the main branch ASAP when it's ready for release.
 
 ## 🍗 Use & Installation
 
 ### Quick Start
 
-1. Download the executable file from [Action](https://github.com/EggLink/DanhengServer-Public/actions)
-2. Open the downloaded `DanhengServer.zip` and extract it to any folder __*preferably an English path__
-   (Optional) Download the `certificate.p12` from the WebServer folder of the source code to enable HTTPS mode, ensuring a more secure traffic
-3. Download Resources[https://github.com/Dimbreath/StarRailData](https://github.com/Dimbreath/StarRailData) and unzip to the same directory `Resources`, and Turn to [https://github.com/EggLinks/DanhengServer-Resources](https://github.com/EggLinks/DanhengServer-Resources) download only `Resources/Config` folder, ExcelOutput and other should use Dimbreath's，then download Configuration from the project and unzip to the same directory`Config`
-4. Run GameServer.exe
-5. Run proxy, start the game, and enjoy!
+DOESNT EXIST YET, ORIGINAL IS FAULTY AND DOESNT REALLY WORK, AND IM TOO BORED TO MAKE A WORKING ONE, IF YOU HAVE A GOOD QUICK START GUIDE IN TEXT, MESSAGE @bioleft3 ON DISCORD (dont waste my time with random stuff)
 
 ### Build
 
@@ -51,30 +46,18 @@ DanhengServer is built using .NET Framework
 - [.NET](https://dotnet.microsoft.com/)
 - [Git](https://git-scm.com/downloads)
 
-##### Windows
-
 ```shell
 git clone --recurse-submodules https://github.com/EggLink/DanhengServer-Public.git
 cd DanhengServer
-dotnet build # compile
 ```
-##### Linux （Ubuntu 20.04）
 ```shell
-wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-
-# Install .NET SDK
-sudo apt-get update && \
-  sudo apt-get install -y dotnet-sdk-8.0
+dotnet publish Program\Program.csproj -o Release\win-x64 -r win-x64 --framework net8.0 -p:PublishSingleFile=true # compile windows
 ```
-
-- Compile and run environment
 ```shell
-git clone --recurse-submodules https://github.com/EggLink/DanhengServer-Public.git
-cd DanhengServer
-.\dotnet build # compile
-./Gameserver
+dotnet publish Program\Program.csproj -o Release\linux-x64 -r linux-x64 --framework net8.0 -p:PublishSingleFile=true # compile linux
+```
+```shell
+dotnet publish Program\Program.csproj -o Release\linux-arm64 -r linux-arm64 --framework net8.0 -p:PublishSingleFile=true # compile arm linux
 ```
 
 ## ❓ Help
@@ -86,7 +69,7 @@ cd DanhengServer
 
 ## ❕️ Troubleshooting
 
-For solutions to common problems or assistance, please join our Discord server at [https://discord.gg/xRtZsmHBVj](https://discord.gg/xRtZsmHBVj)
+For solutions to common problems or assistance, please join the 'offficial' DanhengServer Discord server at [https://discord.gg/xRtZsmHBVj](https://discord.gg/xRtZsmHBVj)
 
 ## 🙌 Acknowledgements
 
