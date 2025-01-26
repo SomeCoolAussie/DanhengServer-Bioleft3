@@ -10,6 +10,7 @@ public enum ItemUseMethodEnum
     TeamSpecificFoodBenefit = 202,
     ExternalSystemFoodBenefit = 203,
     PlayerSelectedDropGift = 301,
+    PlayerSelectedRewardPack = 302,
     TreasureMap = 401,
     Recipe = 501,
     PerformanceProp = 601,
@@ -21,5 +22,6 @@ public enum ItemUseMethodEnum
     TravelBrochureUse = 901,
     TravelBrochurePasterUse = 902,
     PetSummonRecall = 1001,
+    FindChest = 1101,
     FightFestMemorialPaper = 2501
 }

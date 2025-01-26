@@ -11,7 +11,7 @@ public class MazeChestExcel : ExcelResource
     public int ID { get; set; }
 
     [JsonProperty(ItemConverterType = typeof(StringEnumConverter))]
-    public List<ChestTypeEnum> ChestType { get; set; } = [];
+    public List<ChestTypeEnum> ChestType { get; set; } = new List<ChestTypeEnum>();
 
     public override int GetId()
     {

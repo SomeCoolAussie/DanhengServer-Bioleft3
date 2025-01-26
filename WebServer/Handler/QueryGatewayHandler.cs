@@ -26,7 +26,8 @@ internal class QueryGatewayHandler
             EnableVersionUpdate = true,
             EnableUploadBattleLog = true,
             EnableWatermark = true,
-            PILJCFDPOPM = true,
+            //PILJCFDPOPM = true,
+            //EnableDesignDataVersionUpdate = true,
             EnableAndroidMiddlePackage = true,
             NetworkDiagnostic = true,
             CloseRedeemCode = true

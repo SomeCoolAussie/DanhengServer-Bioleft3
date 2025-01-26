@@ -82,6 +82,8 @@ public class ResourceManager
         var resource = (ExcelResource)Activator.CreateInstance(cls)!;
         var count = 0;
         List<ExcelResource> resList = [];
+        HashSet<int> uniqueIds = new(); // Track unique IDs
+
         foreach (var fileName in attribute.FileName)
             try
             {
@@ -107,9 +109,12 @@ public class ResourceManager
                             foreach (var item in jArray)
                             {
                                 var res = JsonConvert.DeserializeObject(item.ToString(), cls);
-                                resList.Add((ExcelResource)res!);
-                                ((ExcelResource?)res)?.Loaded();
-                                count++;
+                                if (res is ExcelResource excelRes && uniqueIds.Add(excelRes.GetId())) // Check for duplicates
+                                {
+                                    resList.Add(excelRes);
+                                    excelRes.Loaded();
+                                    count++;
+                                }
                             }
 
                             break;
@@ -131,18 +136,20 @@ public class ResourceManager
                                     {
                                         var nestedInstance =
                                             JsonConvert.DeserializeObject(nestedItem.Value!.ToString(), cls);
-                                        resList.Add((ExcelResource)nestedInstance!);
-                                        ((ExcelResource?)nestedInstance)?.Loaded();
-                                        count++;
+                                        if (nestedInstance is ExcelResource nestedExcelRes && uniqueIds.Add(nestedExcelRes.GetId())) // Check for duplicates
+                                        {
+                                            resList.Add(nestedExcelRes);
+                                            nestedExcelRes.Loaded();
+                                            count++;
+                                        }
                                     }
                                 }
-                                else
+                                else if (instance is ExcelResource excelRes && uniqueIds.Add(excelRes.GetId())) // Check for duplicates
                                 {
-                                    resList.Add((ExcelResource)instance);
-                                    ((ExcelResource)instance).Loaded();
+                                    resList.Add(excelRes);
+                                    excelRes.Loaded();
+                                    count++;
                                 }
-
-                                count++;
                             }
 
                             break;

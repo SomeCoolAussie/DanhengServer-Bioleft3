@@ -2,7 +2,6 @@
 
 public enum MissionFinishTypeEnum
 {
-
     Unknown = 0,
     AutoFinish = 1,
     Talk = 2,
@@ -580,5 +579,17 @@ public enum MissionFinishTypeEnum
     TrainPartyPassengerChallengeTimes = 270013,
     TrainPartyUnlockPassengerNum = 270014,
     TrainPartyTrigerEvent = 270015,
-    RogueTournFinishWithDifficultyCompExCnt = 270016
+    RogueTournFinishWithDifficultyCompExCnt = 270016,
+    TarotBookFinishStoryCnt = 280017,
+    TarotBookUnlockGivenCharacterStoryCnt = 280018,
+    TarotBookUnlockGivenStoryCnt = 280019,
+    TimeRewindPropStayInState = 280020,
+    DestructPropId = 280021,
+    TarotBookFinishInteraction = 280022,
+    KillMonsterInGameModeList = 280023,
+    TimeLineSetState = 280024,
+    RideCavalryBeastCnt = 280025,
+    TimeLineSetStateCnt = 280026,
+    TarotBookOpenPackCnt = 280027,
+    TarotBookFinishGivenStoryCnt = 280028,
 }
