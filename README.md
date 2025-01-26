@@ -29,7 +29,7 @@
 
 - [ ] **More**  - Coming soon
 
-Some functions of the game might not be support at the first when a new version of the "Anime Game" drops, in such cases, please wait for a new commit tp this Server. Since version 2.3, The original Creators've created a private fork which supports the beta version of the game, and the private fork will be merged to the main branch ASAP when it's ready for release.
+Some functions of the game might not be supported at first, when a new version of the "Anime Game" drops, in such cases, please wait for a new commit tp this Server. Since version 2.3, The original Creators've created a private fork which supports the beta version of the game, and the private fork will be merged to the main branch ASAP when it's ready for release.
 
 ## 🍗 Use & Installation
 
@@ -60,10 +60,6 @@ dotnet publish Program\Program.csproj -o Release\linux-x64 -r linux-x64 --framew
 dotnet publish Program\Program.csproj -o Release\linux-arm64 -r linux-arm64 --framework net8.0 -p:PublishSingleFile=true # compile arm linux
 ```
 
-## ❓ Help
-
-- Support Android system
-- 
 ## 🔗API Help
 [EN](docs/MuipAPI.md) | [简中](docs/MuipAPI_zh-CN.md) | [繁中](docs/MuipAPI_zh-TW.md) | [JP](docs/MuipAPI_ja-JP.md)
 
