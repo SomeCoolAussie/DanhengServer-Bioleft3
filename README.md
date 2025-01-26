@@ -50,14 +50,17 @@ DanhengServer is built using .NET Framework
 git clone --recurse-submodules https://github.com/EggLink/DanhengServer-Public.git
 cd DanhengServer
 ```
+Compile for Windows
 ```shell
-dotnet publish Program\Program.csproj -o Release\win-x64 -r win-x64 --framework net8.0 -p:PublishSingleFile=true # compile windows
+dotnet publish Program\Program.csproj -o Release\win-x64 -r win-x64 --framework net8.0 -p:PublishSingleFile=true
 ```
+Compile for Linux
 ```shell
-dotnet publish Program\Program.csproj -o Release\linux-x64 -r linux-x64 --framework net8.0 -p:PublishSingleFile=true # compile linux
+dotnet publish Program\Program.csproj -o Release\linux-x64 -r linux-x64 --framework net8.0 -p:PublishSingleFile=true
 ```
+Compile for Arm Linux
 ```shell
-dotnet publish Program\Program.csproj -o Release\linux-arm64 -r linux-arm64 --framework net8.0 -p:PublishSingleFile=true # compile arm linux
+dotnet publish Program\Program.csproj -o Release\linux-arm64 -r linux-arm64 --framework net8.0 -p:PublishSingleFile=true
 ```
 
 ## 🔗API Help
