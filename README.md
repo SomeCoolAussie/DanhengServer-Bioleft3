@@ -68,7 +68,7 @@ dotnet publish Program\Program.csproj -o Release\linux-arm64 -r linux-arm64 --fr
 
 ## ❕️ Troubleshooting
 
-For solutions to common problems or assistance, please join the 'offficial' DanhengServer Discord server at [https://discord.gg/xRtZsmHBVj](https://discord.gg/xRtZsmHBVj)
+For solutions to common problems or assistance, please join the 'official' DanhengServer Discord server at [https://discord.gg/xRtZsmHBVj](https://discord.gg/xRtZsmHBVj)
 
 ## 🙌 Acknowledgements
 
